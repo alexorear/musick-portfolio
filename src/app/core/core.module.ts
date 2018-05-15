@@ -11,6 +11,10 @@ import { NavigationComponent } from './header/navigation/navigation.component';
 	declarations: [
 		HeaderComponent,
 		NavigationComponent
+	],
+	exports: [
+		HeaderComponent,
+		NavigationComponent
 	]
 })
 export class CoreModule { }
