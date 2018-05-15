@@ -1,9 +1,13 @@
 .header {
-	height: 20vw;
+	background-color: white;
+	height: 15vw;
+	max-height: 260px;
+	min-height: 110px;
 	padding: 3vw;
 	text-align: center;
 
 	img {
 		width: 15vw;
+		min-width: 110px;
 	}
 }
