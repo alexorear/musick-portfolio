@@ -53,6 +53,26 @@ describe('OverviewComponent', () => {
 		it('first link should be misc work', () => {
 			expect(this.links[2].textContent).toContain('Misc Work');
 		});
+
+		describe('currentSelection', () => {
+			it('should be logo by default', () => {
+				expect(component.currentSelection).not.toBe('print');
+				expect(component.currentSelection).not.toBe('misc');
+				expect(component.currentSelection).toBe('logo');
+			});
+
+			it('should change to print when second link is clicked', async(() => {
+				this.links[1].click();
+				fixture.whenStable();
+				expect(component.currentSelection).toBe('print');
+			}));
+
+			it('should change to misc when third link is clicked', async(() => {
+				this.links[2].click();
+				fixture.whenStable();
+				expect(component.currentSelection).toBe('misc');
+			}));
+		});
 	});
 
 	describe('page contents', () => {

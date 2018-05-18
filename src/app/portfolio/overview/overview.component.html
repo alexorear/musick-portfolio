@@ -1,17 +1,28 @@
 <div>
 	<ul class="nav-links">
-		<li class="nav-link">
+		<li
+			class="nav-link"
+			(click)="currentSelection = 'logo'"
+			[ngClass]="{'nav-link-selected': currentSelection === 'logo'}">
 			Logo Design
 		</li>
-		<li class="nav-link">
+		<li
+			class="nav-link"
+			(click)="currentSelection = 'print'"
+			[ngClass]="{'nav-link-selected': currentSelection === 'print'}">
 			Print Design
 		</li>
-		<li class="nav-link">
+		<li
+			class="nav-link"
+			(click)="currentSelection = 'misc'"
+			[ngClass]="{'nav-link-selected': currentSelection === 'misc'}">
 			Misc Work
 		</li>
 	</ul>
 </div>
 
-<logo-design></logo-design>
-<print-design></print-design>
-<misc-work></misc-work>
+<div class="content-container">
+	<logo-design *ngIf="currentSelection === 'logo'"></logo-design>
+	<print-design *ngIf="currentSelection === 'print'"></print-design>
+	<misc-work *ngIf="currentSelection === 'misc'"></misc-work>
+</div>
