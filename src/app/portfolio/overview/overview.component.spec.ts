@@ -33,27 +33,25 @@ describe('OverviewComponent', () => {
 	});
 
 	describe('section navigation', () => {
-		let navBar: HTMLElement;
-		let links;
 		beforeEach(() => {
-			navBar = fixture.nativeElement;
-			links = navBar.querySelectorAll('li');
+			this.navBar = fixture.nativeElement;
+			this.links = this.navBar.querySelectorAll('li');
 		});
 
 		it('should have 3 nav links', () => {
-			expect(links.length).toBe(3);
+			expect(this.links.length).toBe(3);
 		});
 
 		it('first link should be logo design', () => {
-			expect(links[0].textContent).toContain('Logo Design');
+			expect(this.links[0].textContent).toContain('Logo Design');
 		});
 
 		it('second link should be print design', () => {
-			expect(links[1].textContent).toContain('Print Design');
+			expect(this.links[1].textContent).toContain('Print Design');
 		});
 
 		it('first link should be misc work', () => {
-			expect(links[2].textContent).toContain('Misc Work');
+			expect(this.links[2].textContent).toContain('Misc Work');
 		});
 	});
 
