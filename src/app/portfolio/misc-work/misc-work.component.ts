@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
+import { PortfolioExamplesService } from '../../services/portfolio-examples.service';
 
 @Component({
 	selector: 'misc-work',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./misc-work.component.scss']
 })
 export class MiscWorkComponent implements OnInit {
+	miscExamples$;
 
-	constructor() { }
+	constructor(
+		private portfolioApi: PortfolioExamplesService
+	) { }
 
 	ngOnInit() {
+		this.miscExamples$ = this.portfolioApi.getMiscExamples().subscribe((data) => {
+			console.log(data);
+		});
 	}
 
 }
