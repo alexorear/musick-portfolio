@@ -1,7 +1,7 @@
 export const Portfolio: PortfolioExample[] = [
 	{
 		id: 1,
-		category: 'print',
+		category: 'logo',
 		title: 'Jen’s Resale Boutique',
 		description: 'A fun, upbeat consignment shop catered to everyone ages 13 to 100!',
 		primaryUrl: 'assets/images/portfolio-examples/logos/JenBCard_Full.jpg',
@@ -9,7 +9,7 @@ export const Portfolio: PortfolioExample[] = [
 	},
 	{
 		id: 2,
-		category: 'print',
+		category: 'logo',
 		title: 'Creature Curios',
 		description: 'These odd, yet adorable one-eyed stuffed animals are hand stitched with love by a local St. Louis artist.',
 		primaryUrl: 'assets/images/portfolio-examples/logos/CeatureCuriosLabel.jpg',
@@ -17,7 +17,7 @@ export const Portfolio: PortfolioExample[] = [
 	},
 	{
 		id: 3,
-		category: 'print',
+		category: 'logo',
 		title: 'Podbelsek Family Creations',
 		description: 'A family of antique furniture flippers who love to shabby chick and bring new life to their labors of love.',
 		primaryUrl: 'assets/images/portfolio-examples/logos/PodFamBCard_Full2.jpg',
@@ -25,7 +25,7 @@ export const Portfolio: PortfolioExample[] = [
 	},
 	{
 		id: 4,
-		category: 'print',
+		category: 'logo',
 		title: 'AAA Alterations &amp; Tailoring',
 		description: 'This alteration shop revamped the vintage sign in front of their location and I used it ' +
 		'as the inspiration for their whole company’s branding.',
@@ -34,7 +34,7 @@ export const Portfolio: PortfolioExample[] = [
 	},
 	{
 		id: 5,
-		category: 'print',
+		category: 'logo',
 		title: 'Optimus Talent Partners',
 		description: 'A talent management company helping your current and future team soar to new heights.',
 		primaryUrl: 'assets/images/portfolio-examples/logos/Optimus_Full.jpg',
@@ -42,11 +42,11 @@ export const Portfolio: PortfolioExample[] = [
 	},
 	{
 		id: 6,
-		category: 'print',
+		category: 'logo',
 		title: 'Jen’s Resale Boutique',
 		description: 'A fun, upbeat consignment shop catered to everyone ages 13 to 100!',
-		primaryUrl: 'assets/images/portfolio-examples/print/',
-		primaryThumbUrl: 'assets/images/portfolio-examples/print/thumbnails/'
+		primaryUrl: 'assets/images/portfolio-examples/logos/',
+		primaryThumbUrl: 'assets/images/portfolio-examples/logos/thumbnails/'
 	},
 	{
 		id: 7,
