@@ -1,4 +1,4 @@
-export const portfolioExamples: PortfolioExample[] = [
+export const Portfolio: PortfolioExample[] = [
 	{
 		id: 1,
 		category: 'print',
