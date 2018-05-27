@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PortFolioSection } from '../types/portfolio-section';
+import { PortfolioSection } from '../types/portfolio-section';
 
 @Component({
 	selector: 'portfolio-overview',
@@ -9,7 +9,7 @@ import { PortFolioSection } from '../types/portfolio-section';
 })
 
 export class OverviewComponent implements OnInit {
-	currentSelection: PortFolioSection;
+	currentSelection: PortfolioSection;
 
 	ngOnInit() {
 		this.currentSelection = 'logo';

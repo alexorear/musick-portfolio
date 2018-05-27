@@ -1,1 +1,1 @@
-export type PortFolioSection = 'logo' | 'print' | 'misc';
+export type PortfolioSection = 'logo' | 'print' | 'misc';
