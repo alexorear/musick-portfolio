@@ -12,6 +12,13 @@ export class PortfolioExamplesService {
 		return Observable.of(Portfolio);
 	}
 
+	getPortfolioPiece(id: number): Observable<PortfolioExample> {
+		const portfolioExample = Portfolio.find((example) => {
+			return example.id === id;
+		});
+		return Observable.of(portfolioExample);
+	}
+
 	getPrintExamples(): Observable<PortfolioExample[]> {
 		const examples = Portfolio.filter((example) => {
 			return example.category === 'print';
