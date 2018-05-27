@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
+import { PortfolioExamplesService } from '../../services/portfolio-examples.service';
 import { LogoDesignComponent } from '../logo-design/logo-design.component';
 import { MiscWorkComponent } from '../misc-work/misc-work.component';
 import { OverviewComponent } from './overview.component';
@@ -17,7 +18,8 @@ describe('OverviewComponent', () => {
 				LogoDesignComponent,
 				MiscWorkComponent,
 				PrintDesignComponent
-			]
+			],
+			providers: [ PortfolioExamplesService ]
 		})
 		.compileComponents();
 	}));

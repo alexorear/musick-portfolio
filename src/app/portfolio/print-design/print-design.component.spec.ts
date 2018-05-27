@@ -1,25 +1,27 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { PortfolioExamplesService } from '../../services/portfolio-examples.service';
 import { PrintDesignComponent } from './print-design.component';
 
 describe('PrintDesignComponent', () => {
-  let component: PrintDesignComponent;
-  let fixture: ComponentFixture<PrintDesignComponent>;
+	let component: PrintDesignComponent;
+	let fixture: ComponentFixture<PrintDesignComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ PrintDesignComponent ]
-    })
-    .compileComponents();
-  }));
+	beforeEach(async(() => {
+		TestBed.configureTestingModule({
+			declarations: [ PrintDesignComponent ],
+			providers: [ PortfolioExamplesService ]
+		})
+		.compileComponents();
+	}));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(PrintDesignComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(() => {
+		fixture = TestBed.createComponent(PrintDesignComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });
