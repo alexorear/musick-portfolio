@@ -6,6 +6,7 @@ import { LogoDesignComponent } from './logo-design/logo-design.component';
 import { MiscWorkComponent } from './misc-work/misc-work.component';
 import { OverviewComponent } from './overview/overview.component';
 import { PrintDesignComponent } from './print-design/print-design.component';
+import { ExampleDetailComponent } from './example-detail/example-detail.component';
 
 @NgModule({
 	imports: [
@@ -15,7 +16,8 @@ import { PrintDesignComponent } from './print-design/print-design.component';
 		LogoDesignComponent,
 		MiscWorkComponent,
 		PrintDesignComponent,
-		OverviewComponent
+		OverviewComponent,
+		ExampleDetailComponent
 	],
 	providers: [PortfolioExamplesService],
 	exports: [
