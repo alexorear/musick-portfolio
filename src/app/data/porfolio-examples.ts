@@ -4,8 +4,8 @@ export const Portfolio: PortfolioExample[] = [
 		category: 'logo',
 		title: 'Jen’s Resale Boutique',
 		description: 'A fun, upbeat consignment shop catered to everyone ages 13 to 100!',
-		primaryUrl: 'assets/images/portfolio-examples/logos/JenBCard_Full.jpg',
-		primaryThumbUrl: 'assets/images/portfolio-examples/logos/thumbnails/JensResale.jpb'
+		primaryUrl: 'assets/images/portfolio-examples/logos/JenBCard_Full2.jpg',
+		primaryThumbUrl: 'assets/images/portfolio-examples/logos/thumbnails/JensResale.jpg'
 	},
 	{
 		id: 2,
@@ -39,14 +39,6 @@ export const Portfolio: PortfolioExample[] = [
 		description: 'A talent management company helping your current and future team soar to new heights.',
 		primaryUrl: 'assets/images/portfolio-examples/logos/Optimus_Full.jpg',
 		primaryThumbUrl: 'assets/images/portfolio-examples/logos/thumbnails/Optimus.jpg'
-	},
-	{
-		id: 6,
-		category: 'logo',
-		title: 'Jen’s Resale Boutique',
-		description: 'A fun, upbeat consignment shop catered to everyone ages 13 to 100!',
-		primaryUrl: 'assets/images/portfolio-examples/logos/',
-		primaryThumbUrl: 'assets/images/portfolio-examples/logos/thumbnails/'
 	},
 	{
 		id: 7,
