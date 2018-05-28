@@ -9,16 +9,14 @@ import { PortfolioExamplesService } from '../../services/portfolio-examples.serv
 	styleUrls: ['./logo-design.component.scss']
 })
 export class LogoDesignComponent implements OnInit {
-	logoExamples$;
+	logoExamples$: Observable<PortfolioExample[]>;
 
 	constructor(
 		private portfolioApi: PortfolioExamplesService
 	) { }
 
 	ngOnInit() {
-		this.logoExamples$ = this.portfolioApi.getLogoExamples().subscribe((data) => {
-			console.log(data);
-		});
+		this.logoExamples$ = this.portfolioApi.getLogoExamples();
 	}
 
 }

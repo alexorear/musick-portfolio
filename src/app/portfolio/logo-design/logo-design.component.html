@@ -1,3 +1,5 @@
-<p>
-  logo-design works!
-</p>
+<div class="thumb-container">
+	<div class="thumbnail" *ngFor="let example of logoExamples$ | async">
+		<img src="{{ example.primaryThumbUrl }}" />
+	</div>
+</div>

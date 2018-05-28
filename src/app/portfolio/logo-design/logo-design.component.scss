@@ -1,0 +1,54 @@
+.thumb-container {
+	margin: 0 auto;
+	width: 1128px;
+}
+
+.thumbnail {
+	display: inline-block;
+	margin: 1rem;
+	width: 250px;
+
+	img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.thumb-container {
+		max-width: 1128px;
+	}
+
+	.thumbnail {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.thumb-container {
+		max-width: 846px;
+	}
+
+	.thumbnail {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 755px) {
+	.thumb-container {
+		max-width: 564px;
+	}
+
+	.thumbnail {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.thumb-container {
+		max-width: 364px;
+	}
+
+	.thumbnail {
+		width: 150px;
+	}
+}
