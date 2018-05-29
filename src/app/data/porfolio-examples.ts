@@ -12,7 +12,7 @@ export const Portfolio: PortfolioExample[] = [
 		category: 'logo',
 		title: 'Creature Curios',
 		description: 'These odd, yet adorable one-eyed stuffed animals are hand stitched with love by a local St. Louis artist.',
-		primaryUrl: 'assets/images/portfolio-examples/logos/CeatureCuriosLabel.jpg',
+		primaryUrl: 'assets/images/portfolio-examples/logos/CreatureCuriosLabel.jpg',
 		primaryThumbUrl: 'assets/images/portfolio-examples/logos/thumbnails/CreatureCurios.jpg'
 	},
 	{
