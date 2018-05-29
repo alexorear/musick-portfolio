@@ -1,15 +1,30 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
+import { Observable } from 'rxjs/Observable';
+
+import { PortfolioExamplesService } from '../../services/portfolio-examples.service';
 @Component({
-  selector: 'app-example-detail',
-  templateUrl: './example-detail.component.html',
-  styleUrls: ['./example-detail.component.scss']
+	selector: 'app-example-detail',
+	templateUrl: './example-detail.component.html',
+	styleUrls: ['./example-detail.component.scss']
 })
 export class ExampleDetailComponent implements OnInit {
+	portfolioExample: PortfolioExample;
 
-  constructor() { }
+	constructor(
+		private portfolioApi: PortfolioExamplesService,
+		private route: ActivatedRoute
+	) { }
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+		this.route.params.subscribe((param) => {
+			console.log(param.id);
+			this.portfolioApi.getPortfolioPiece(+param.id).subscribe((example) => {
+				console.log(example);
+				this.portfolioExample = example;
+			});
+		});
+	}
 
 }

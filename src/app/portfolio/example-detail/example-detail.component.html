@@ -1,5 +1,14 @@
-<p>
-  example-detail works!
-</p>
-
-<
+<portfolio-overview>
+	<div class="content-container">
+		<div class="image-container">
+			<img [src]="portfolioExample.primaryUrl" />
+		</div>
+		<div class="description-container">
+			<h1>{{ portfolioExample.title }}</h1>
+			<p>
+				{{ portfolioExample.description }}
+			</p>
+		</div>
+	</div>
+	<hr />
+</portfolio-overview>

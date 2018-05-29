@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { PortfolioExamplesService } from '../services/portfolio-examples.service';
 import { LogoDesignComponent } from './logo-design/logo-design.component';
@@ -10,7 +11,8 @@ import { ExampleDetailComponent } from './example-detail/example-detail.componen
 
 @NgModule({
 	imports: [
-		CommonModule
+		CommonModule,
+		RouterModule
 	],
 	declarations: [
 		LogoDesignComponent,

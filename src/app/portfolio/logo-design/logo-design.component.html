@@ -1,5 +1,8 @@
 <div class="thumb-container">
-	<div class="thumbnail" *ngFor="let example of logoExamples$ | async">
+	<div
+		class="thumbnail"
+		routerLink="/example/{{example.id}}"
+		*ngFor="let example of logoExamples$ | async">
 		<img src="{{ example.primaryThumbUrl }}" />
 	</div>
 </div>
