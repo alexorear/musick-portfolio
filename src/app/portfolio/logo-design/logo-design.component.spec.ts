@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { PortfolioExamplesService } from '../../services/portfolio-examples.service';
 import { LogoDesignComponent } from './logo-design.component';
@@ -9,6 +10,7 @@ describe('LogoDesignComponent', () => {
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
+			imports: [ RouterTestingModule ],
 			declarations: [ LogoDesignComponent ],
 			providers: [PortfolioExamplesService]
 		})

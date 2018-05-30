@@ -36,8 +36,8 @@ describe('PortfolioExamplesService', () => {
 					category: 'logo',
 					title: 'Jen’s Resale Boutique',
 					description: 'A fun, upbeat consignment shop catered to everyone ages 13 to 100!',
-					primaryUrl: 'assets/images/portfolio-examples/logos/JenBCard_Full.jpg',
-					primaryThumbUrl: 'assets/images/portfolio-examples/logos/thumbnails/JensResale.jpb'
+					primaryUrl: 'assets/images/portfolio-examples/logos/JenBCard_Full2.jpg',
+					primaryThumbUrl: 'assets/images/portfolio-examples/logos/thumbnails/JensResale.jpg'
 				};
 				expect(service.getPortfolioPiece(1)).toEqual(Observable.of(expected));
 			});

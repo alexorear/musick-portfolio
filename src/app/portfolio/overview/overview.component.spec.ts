@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { PortfolioExamplesService } from '../../services/portfolio-examples.service';
 import { LogoDesignComponent } from '../logo-design/logo-design.component';
@@ -13,6 +14,7 @@ describe('OverviewComponent', () => {
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
+			imports: [ RouterTestingModule ],
 			declarations: [
 				OverviewComponent,
 				LogoDesignComponent,
