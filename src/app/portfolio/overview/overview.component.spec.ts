@@ -3,10 +3,8 @@ import { By } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { PortfolioExamplesService } from '../../services/portfolio-examples.service';
-import { LogoDesignComponent } from '../logo-design/logo-design.component';
-import { MiscWorkComponent } from '../misc-work/misc-work.component';
+import { ExampleGridComponent } from '../example-grid/example-grid.component';
 import { OverviewComponent } from './overview.component';
-import { PrintDesignComponent } from '../print-design/print-design.component';
 
 describe('OverviewComponent', () => {
 	let component: OverviewComponent;
@@ -17,9 +15,7 @@ describe('OverviewComponent', () => {
 			imports: [ RouterTestingModule ],
 			declarations: [
 				OverviewComponent,
-				LogoDesignComponent,
-				MiscWorkComponent,
-				PrintDesignComponent
+				ExampleGridComponent
 			],
 			providers: [ PortfolioExamplesService ]
 		})

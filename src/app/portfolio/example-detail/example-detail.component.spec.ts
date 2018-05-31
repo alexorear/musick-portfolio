@@ -8,10 +8,8 @@ import { Observable } from 'rxjs/Observable';
 import { Portfolio } from '../../data/porfolio-examples';
 import { PortfolioExamplesService } from '../../services/portfolio-examples.service';
 import { ExampleDetailComponent } from './example-detail.component';
-import { LogoDesignComponent } from '../logo-design/logo-design.component';
-import { MiscWorkComponent } from '../misc-work/misc-work.component';
+import { ExampleGridComponent } from '../example-grid/example-grid.component';
 import { OverviewComponent } from '../overview/overview.component';
-import { PrintDesignComponent } from '../print-design/print-design.component';
 
 describe('ExampleDetailComponent', () => {
 	let component: ExampleDetailComponent;
@@ -22,10 +20,8 @@ describe('ExampleDetailComponent', () => {
 			imports: [ RouterTestingModule ],
 			declarations: [
 				ExampleDetailComponent,
-				LogoDesignComponent,
-				MiscWorkComponent,
-				OverviewComponent,
-				PrintDesignComponent
+				ExampleGridComponent,
+				OverviewComponent
 			],
 			providers: [ PortfolioExamplesService,
 				{

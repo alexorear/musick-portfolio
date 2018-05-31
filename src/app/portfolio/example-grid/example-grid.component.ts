@@ -4,19 +4,19 @@ import { Observable } from 'rxjs/Observable';
 import { PortfolioExamplesService } from '../../services/portfolio-examples.service';
 
 @Component({
-	selector: 'misc-work',
-	templateUrl: './misc-work.component.html',
-	styleUrls: ['./misc-work.component.scss']
+	selector: 'example-grid',
+	templateUrl: './example-grid.component.html',
+	styleUrls: ['./example-grid.component.scss']
 })
-export class MiscWorkComponent implements OnInit {
-	miscExamples$;
+export class ExampleGridComponent implements OnInit {
+	logoExamples$: Observable<PortfolioExample[]>;
 
 	constructor(
 		private portfolioApi: PortfolioExamplesService
 	) { }
 
 	ngOnInit() {
-		this.miscExamples$ = this.portfolioApi.getMiscExamples().subscribe((data) => {});
+		this.logoExamples$ = this.portfolioApi.getLogoExamples();
 	}
 
 }
