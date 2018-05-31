@@ -16,9 +16,7 @@ export class MiscWorkComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
-		this.miscExamples$ = this.portfolioApi.getMiscExamples().subscribe((data) => {
-			console.log(data);
-		});
+		this.miscExamples$ = this.portfolioApi.getMiscExamples().subscribe((data) => {});
 	}
 
 }

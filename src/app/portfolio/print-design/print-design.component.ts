@@ -16,9 +16,7 @@ export class PrintDesignComponent implements OnInit {
 	) { }
 
 	ngOnInit() {
-		this.printExamples$ = this.portfolioApi.getPrintExamples().subscribe((data) => {
-			console.log(data);
-		});
+		this.printExamples$ = this.portfolioApi.getPrintExamples().subscribe();
 	}
 
 }

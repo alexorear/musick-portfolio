@@ -19,9 +19,7 @@ export class ExampleDetailComponent implements OnInit {
 
 	ngOnInit() {
 		this.route.params.subscribe((param) => {
-			console.log(param.id);
 			this.portfolioApi.getPortfolioPiece(+param.id).subscribe((example) => {
-				console.log(example);
 				this.portfolioExample = example;
 			});
 		});
