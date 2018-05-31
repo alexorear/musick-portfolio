@@ -2,7 +2,7 @@
 	<div
 		class="thumbnail"
 		routerLink="/example/{{example.id}}"
-		*ngFor="let example of logoExamples$ | async">
+		*ngFor="let example of portfolioExamples$ | async">
 		<img src="{{ example.primaryThumbUrl }}" />
 	</div>
 </div>
